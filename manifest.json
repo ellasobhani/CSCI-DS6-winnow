@@ -6,7 +6,8 @@
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        
+        "16": "img/logo-16.png",
+        "128": "img/logo-128.png"
         }
     },
     "permissions": ["contextMenus"],

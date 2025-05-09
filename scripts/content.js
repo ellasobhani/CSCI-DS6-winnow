@@ -10,8 +10,7 @@ chrome.runtime.onInstalled.addListener(function () {
     });
 });
 
-chrome.contextMenus.onClicked.addListener((item, tab) => {
-    const tld = item.menuItemId;    
+chrome.contextMenus.onClicked.addListener((item, tab) => {  
     let selection = item.selectionText;
     const url = new URL(`https://en.wikipedia.org/wiki/${selection}`);
     chrome.tabs.create({ url: url.href, index: tab.index + 1 });
